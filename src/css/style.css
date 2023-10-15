@@ -1,0 +1,206 @@
+:root{
+    --color-red: rgba(138, 3, 3, 0.903);
+    
+}
+/*rgba(255, 0, 0, 0.2)*/
+
+
+
+body {
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+
+h2 {color:  var(--color-red);
+margin-left: 10px;
+margin-top: 60px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.imagem-filme {display:flex;}
+
+.imagem-filme .imagem-seta img {width:40px;
+height: 45px;
+margin: 45px;
+margin-right: 10px;
+margin-left: 15px;
+margin-top: 100px;}
+
+.imagem-filme img {width:230px;
+height: 240px;
+margin: 25px;
+margin-right: 20px;
+margin-left: 20px;
+border-radius: 20%;
+overflow: hidden;
+box-shadow: 0px 8px 16px var(--color-red);}
+
+.imagem {position: relative;
+display: inline-block;
+border-radius: 20%;
+overflow: hidden;}
+
+.imagem:hover .overlay {opacity: 1;}
+
+.overlay {position: absolute;
+top: 5px;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+text-align: center;
+line-height: 100%;
+opacity: 0;
+transition: opacity 0.3s;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+/*######################### VIVIAN ##########################*/
+/*######################### VIVIAN ##########################*/
+/*######################### VIVIAN ##########################*/
+
+.cabecalho ul{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0);
+    border: var(--color-red) 2px solid ;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.pesquisa_nome{
+    display: flex;
+    height: 37px ;
+    padding: 20px;
+}
+
+.logo{
+    width: 80px;
+}
+
+
+.cimap{
+    padding: 8px;
+    margin-right: 15px;
+    border: 1px black solid;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    background-color: var(--color-red);
+}
+
+#mas_opcoes{
+    font-size: 40px;
+    color: white;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+
+/*CATEGORIA*/
+
+#categoria{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0);
+    margin-top: 10px;
+    padding: 40px;
+    border: var(--color-red) 2px solid ;
+    border-radius: 10px;
+    
+}
+.list_catego_a{
+    
+    text-transform: uppercase;
+    background-color: var(--color-red);
+}
+#barrinha{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.h3{
+    margin-right: 20px;
+    font-size: 20px;
+    }
+
+
+.list_catego_a li{
+
+    padding: 10px;
+}
+
+.list_catego_a li:hover{
+
+    padding: 10px;
+    color: var(--color-red);
+}
+input{
+    color: var(--color-red);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(10,10,10,1) 54%, rgba(25,25,25,1) 100%);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: var(--color-red) ;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+footer{
+    background-color: var(--color-red);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+}
+
+.gostou{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+#gostou_h2{
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+#gostou_h1{
+    opacity: 0;
+
+}
+
+.logo_redes{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+.redes-sociais ul li a {
+
+    font-size: 30px;
+}
+
+.redes-sociais ul {
+
+    list-style: none;
+    display: flex;
+}
+
+.redes-sociais ul li {
+
+    margin: 10px;
+}
+
