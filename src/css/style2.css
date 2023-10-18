@@ -115,12 +115,12 @@ gap: 30px;}
 
 
 
-/*######################### VIVIAN ##########################*/
-/*######################### VIVIAN ##########################*/
-/*######################### VIVIAN ##########################*/
+/*######################### footer ##########################*/
+/*######################### footer ##########################*/
+/*######################### footer ##########################*/
 
 footer{
-    background-color: var(--color-red);
+    background-color: black;
     padding-top: 10px;
     padding-bottom: 30px;
     
@@ -133,7 +133,7 @@ footer{
 }
 
 #gostou_h2{
-    color: black;
+    color: var(--color-red);
     font-size: 30px;
     cursor: pointer;
     

@@ -54,9 +54,15 @@ opacity: 0;
 transition: opacity 0.3s;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-/*######################### VIVIAN ##########################*/
-/*######################### VIVIAN ##########################*/
-/*######################### VIVIAN ##########################*/
+
+
+
+
+
+
+/*######################### cabeçalho ##########################*/
+/*######################### cabeçalho ##########################*/
+/*######################### cabeçalho ##########################*/
 
 .cabecalho ul{
 
@@ -155,9 +161,13 @@ input{
     text-transform: uppercase;
 }
 
+/*######################### footer ##########################*/
+/*######################### footer ##########################*/
+/*######################### footer ##########################*/
+
 
 footer{
-    background-color: var(--color-red);
+    background-color: black;
     padding-top: 10px;
     padding-bottom: 30px;
     
@@ -170,7 +180,7 @@ footer{
 }
 
 #gostou_h2{
-    color: black;
+    color: var(--color-red);
     font-size: 30px;
     cursor: pointer;
     
