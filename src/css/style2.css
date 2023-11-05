@@ -36,7 +36,7 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 height: 240px;
 display: flex;}
 
-.imagem-barbie {position: relative;
+.imagem {position: relative;
 display: inline-block;
 border-radius: 20%;
 overflow: hidden;
@@ -45,46 +45,36 @@ box-shadow: 0px 8px 16px var(--color-red);
 width:230px;
 height: 240px;
 margin: 25px;
-margin-left: 70px;}
+margin-left: 70px;
 
-.imagem-barbie:hover .overlay {opacity: 1;}
+animation-name: balanco;
+animation-duration: 9s;
+}
 
-.imagem-viva {position: relative;
-display: inline-block;
-border-radius: 20%;
-overflow: hidden;
-height: 20%;
-box-shadow: 0px 8px 16px var(--color-red);
-width:230px;
-height: 240px;
-margin: 25px;}
+.imagem:hover .overlay {opacity: 1;}
 
-    
-.imagem-viva:hover .overlay {opacity: 1;}
 
-.imagem-toy{position: relative;
-display: inline-block;
-border-radius: 20%;
-overflow: hidden;
-height: 10%;
-box-shadow: 0px 8px 16px var(--color-red);
-width:230px;
-height: 240px;
-margin: 25px;}
+@keyframes balanco{
 
-.imagem-toy:hover .overlay {opacity: 1;}
+    0%{
+        transform: translate3d(0,20px,0);
+    }
 
-.imagem-luca{position: relative;
-display: inline-block;
-border-radius: 20%;
-overflow: hidden;
-height: 20%;
-box-shadow: 0px 8px 16px var(--color-red);
-width:230px;
-height: 240px;
-margin: 25px;}
+    40%,50%{
+        transform: translate3d(0,-20px,0);
+    }
 
-.imagem-luca:hover .overlay {opacity: 1;}
+    to{
+        transform: translate3d(0,20px,0);
+    }
+
+}
+
+
+
+
+
+
 
 .dois{width: 600px;
 margin: 1px;
