@@ -36,7 +36,7 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 height: 240px;
 display: flex;}
 
-.imagem {position: relative;
+.imagem-barbie {position: relative;
 display: inline-block;
 border-radius: 20%;
 overflow: hidden;
@@ -45,36 +45,46 @@ box-shadow: 0px 8px 16px var(--color-red);
 width:230px;
 height: 240px;
 margin: 25px;
-margin-left: 70px;
+margin-left: 70px;}
 
-animation-name: balanco;
-animation-duration: 9s;
-}
+.imagem-barbie:hover .overlay {opacity: 1;}
 
-.imagem:hover .overlay {opacity: 1;}
+.imagem-viva {position: relative;
+display: inline-block;
+border-radius: 20%;
+overflow: hidden;
+height: 20%;
+box-shadow: 0px 8px 16px var(--color-red);
+width:230px;
+height: 240px;
+margin: 25px;}
 
+    
+.imagem-viva:hover .overlay {opacity: 1;}
 
-@keyframes balanco{
+.imagem-toy{position: relative;
+display: inline-block;
+border-radius: 20%;
+overflow: hidden;
+height: 10%;
+box-shadow: 0px 8px 16px var(--color-red);
+width:230px;
+height: 240px;
+margin: 25px;}
 
-    0%{
-        transform: translate3d(0,20px,0);
-    }
+.imagem-toy:hover .overlay {opacity: 1;}
 
-    40%,50%{
-        transform: translate3d(0,-20px,0);
-    }
+.imagem-luca{position: relative;
+display: inline-block;
+border-radius: 20%;
+overflow: hidden;
+height: 20%;
+box-shadow: 0px 8px 16px var(--color-red);
+width:230px;
+height: 240px;
+margin: 25px;}
 
-    to{
-        transform: translate3d(0,20px,0);
-    }
-
-}
-
-
-
-
-
-
+.imagem-luca:hover .overlay {opacity: 1;}
 
 .dois{width: 600px;
 margin: 1px;
@@ -105,12 +115,46 @@ gap: 30px;}
 
 
 
-/*######################### footer ##########################*/
-/*######################### footer ##########################*/
-/*######################### footer ##########################*/
+/*######################### VIVIAN ##########################*/
+/*######################### VIVIAN ##########################*/
+/*######################### VIVIAN ##########################*/
+
+#mov2{
+    animation-name: balancoMei;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+#mov1{
+
+    animation-name: balancoMei;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+#mov3{
+    animation-name: balancoMei;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+
+}
+
+@keyframes balancoMei{
+    0%{
+        transform: translate3d(0,0,0);
+
+    }
+
+    50%{
+        transform: translate3d(-10px,-10px,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+
+}
 
 footer{
-    background-color: black;
+    background-color: var(--color-red);
     padding-top: 10px;
     padding-bottom: 30px;
     
@@ -123,7 +167,7 @@ footer{
 }
 
 #gostou_h2{
-    color: var(--color-red);
+    color: black;
     font-size: 30px;
     cursor: pointer;
     

@@ -54,15 +54,9 @@ opacity: 0;
 transition: opacity 0.3s;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
-
-
-
-
-
-
-/*######################### cabeçalho ##########################*/
-/*######################### cabeçalho ##########################*/
-/*######################### cabeçalho ##########################*/
+/*######################### VIVIAN ##########################*/
+/*######################### VIVIAN ##########################*/
+/*######################### VIVIAN ##########################*/
 
 .cabecalho ul{
 
@@ -74,6 +68,15 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     margin: 10px;
     padding: 10px;
 
+}
+
+.but{
+    color: white;
+    padding-left: 10px;
+    background-color: black;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
 }
 
 .pesquisa_nome{
@@ -121,6 +124,21 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     border-radius: 10px;
     
 }
+.lista_catego li::marker{
+
+    content: '🍿';
+}
+.botao-login{background-color: rgba(0, 0, 0, 0.903);
+    color: white;
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
+    border: var(--color-red) 2px solid;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
 .list_catego_a{
     
     text-transform: uppercase;
@@ -160,10 +178,6 @@ input{
     text-align: center;
     text-transform: uppercase;
 }
-
-/*######################### footer ##########################*/
-/*######################### footer ##########################*/
-/*######################### footer ##########################*/
 
 
 footer{

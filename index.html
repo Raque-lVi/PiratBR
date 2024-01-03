@@ -11,6 +11,8 @@
     <title>PiratBR</title>
 
     <script src="./src/js/script.js" defer></script>
+    <!--<script src="./src/js/script_input.js" defer ></script>-->
+
 
 </head>
 <body>
@@ -20,8 +22,11 @@
     <header>
         <section class="cabecalho">
             <ul>
-                <li><a href="#"><img src="./src/img/caveiraa.jpeg" alt="" class="logo" ></a></li>
-                <li class="pesquisa_nome"> <div class="cimap"><h1>P</h1></div> <input type="text" ></li>
+                <div style="display: flex; padding: 10px; "> 
+                    <li><a href="#"><img src="./src/img/caveiraa.jpeg" alt="" class="logo" ></a></li>
+                    <li><button onclick="window.location.href='login.html'" class="botao-login">Login</button></li>
+                </div>
+                <li class="pesquisa_nome"> <div class="cimap"><h1>P</h1></div> <input type="text" id="imputt" > <button class="but" onclick="pesquisar()">></button></li>
                 <li id="mas_opcoes">||||</li>
             </ul>
         </section>
@@ -48,153 +53,138 @@
     </header>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     <h2 id="acao">Filmes de Ação:</h2>
     <div class="imagem-filme">
-        <div class="imagem-seta"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+        <div class="imagem-seta" onclick="upImg('ação', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
         
         <div class="imagem"> 
-            <img src="./src/img/filmes/rocky.jpeg" alt="rocky">
-            <div class="overlay">Rocky: Um lutador</div> 
+            <img id="img1" onclick="proxPag('ação',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/rocky.jpeg" alt="rocky">
+            <div class="overlay"></div> 
         </div>
             <div class="imagem">
-                <img src="./src/img/filmes/osmercenarios.jpeg" alt="os mercenarios">
-                <div class="overlay">Os Mercenários</div>  
+                <img id="img2" onclick="proxPag('ação',2)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/osmercenarios.jpeg" alt="os mercenarios">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/missaoimpossivel.jpeg" alt="missao impossivel">
-                <div class="overlay">Missão Impossível</div>  
+                <img id="img3" onclick="proxPag('ação',3)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/missaoimpossivel.jpeg" alt="missao impossivel">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/rambo.jpeg" alt="rambo">
-                <div class="overlay">Rambo</div>  
+                <img id="img4" onclick="proxPag('ação',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/rambo.jpeg" alt="rambo">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/cargaexplosiva.jpeg" alt="carga explosiva">
-                <div class="overlay">Carga Explosiva</div>  
+                <img id="img5" onclick="proxPag('ação',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/cargaexplosiva.jpeg" alt="carga explosiva">
+                <div class="overlay"></div>  
             </div>
-        <div class="imagem-seta"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
+        <div class="imagem-seta" onclick="upImg('ação', true,0)"> <img src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/setaparadireita.png" alt="seta para direita"></div>
     </div>
 
     <h2 id="comedia">Filmes de Comédia</h2>
     <div class="imagem-filme">
-        <div class="imagem-seta"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+        <div class="imagem-seta" onclick="upImg('comedia', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
             <div class="imagem">
-                <img src="./src/img/filmes/todopoderoso.jpeg" alt="todo poderoso">
-                <div class="overlay">Todo Poderoso</div>  
+                <img id="img6" onclick="proxPag('comedia',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/todopoderoso.jpeg" alt="todo poderoso">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/policialemapuros.jpeg" alt="policial em apuros">
-                <div class="overlay">Policial em Apuros</div>  
+                <img id="img7" onclick="proxPag('comedia',2)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/policialemapuros.jpeg" alt="policial em apuros">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/pensecomoelestambem.jpeg" alt="pense como eles tambem">
-                <div class="overlay">Pense Como Eles Também</div>  
+                <img id="img8" onclick="proxPag('comedia',3)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/pensecomoelestambem.jpeg" alt="pense como eles tambem">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/gentegrande.jpeg" alt="gente grande">
-                <div class="overlay">Gente Grande</div>  
+                <img id="img9" onclick="proxPag('comedia',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/gentegrande.jpeg" alt="gente grande">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/esseemeugaroto.jpeg" alt="esse e o meu garoto">
-                <div class="overlay">Esse É O Meu Garoto</div>  
+                <img id="img10" onclick="proxPag('comedia',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/esseemeugaroto.jpeg" alt="esse e o meu garoto">
+                <div class="overlay"></div>  
             </div>
-        <div class="imagem-seta"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
+        <div class="imagem-seta" onclick="upImg('comedia', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita" ></div>
     </div>
 
     <h2 id="infantil">Filmes Infantis:</h2>
     <div class="imagem-filme">
-        <div class="imagem-seta"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+        <div class="imagem-seta" onclick="upImg('Infantis', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
             <div class="imagem">
-                <img src="./src/img/filmes/vivaavidaeumafesta.jpeg" alt="viva a vida e uma festa">
-                <div class="overlay">Viva - A vida é uma Festa</div>  
+                <img id="img11" onclick="proxPag('Infantis',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/vivaavidaeumafesta.jpeg" alt="viva a vida e uma festa">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem"> 
-                <a href="about.html">
-                    <img src="./src/img/filmes/up.jpeg" alt="Up: Altas Aventuras">
-                    <div class="overlay">Up: Altas Aventuras</div>
+                <a href="about.html" onclick="proxPag('Infantis',3)">
+                    <img id="img12" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/up.jpeg" alt="Up: Altas Aventuras">
+                    <div class="overlay"></div>
                 </a>
             </div>
-            <div class="imagem">
-                <img src="./src/img/filmes/toystory.jpeg" alt="toy story">
-                <div class="overlay">Toy Story</div>  
+            <div class="imagem" onclick="proxPag('Infantis',3)">
+                <img id="img13" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/toystory.jpeg" alt="toy story">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/luca1.jpeg" alt="luca">
-                <div class="overlay">Luca</div>  
+                <img id="img14" onclick="proxPag('Infantis',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/luca1.jpeg" alt="luca">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/barbie.jpeg" alt="barbie">
-                <div class="overlay">Barbie</div>  
+                <img id="img15" onclick="proxPag('Infantis',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/barbie.jpeg" alt="barbie">
+                <div class="overlay"></div>  
             </div>
-        <div class="imagem-seta"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
+        <div class="imagem-seta" onclick="upImg('Infantis', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
     </div>
 
     <h2 id="romance">Filmes de Romance:</h2>
     <div class="imagem-filme">
-        <div class="imagem-seta"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+        <div class="imagem-seta" onclick="upImg('romance', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
             <div class="imagem">
-                <img src="./src/img/filmes/umalindamulher.jpeg" alt="uma linda mulher">
-                <div class="overlay">Uma Linda Mulher</div>  
+                <img id="img16" onclick="proxPag('romance',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/umalindamulher.jpeg" alt="uma linda mulher">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem"> 
-                <img src="./src/img/filmes/idasevindasdoamor.jpeg" alt="idas e vindas do amor">
-                <div class="overlay">Idas e Vindas do Amor</div> 
+                <img id="img17" onclick="proxPag('romance',2)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/idasevindasdoamor.jpeg" alt="idas e vindas do amor">
+                <div class="overlay"></div> 
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/depoisdouniverso.jpeg" alt="depois do universo">
-                <div class="overlay">Depois do Universo</div>  
+                <img id="img18" onclick="proxPag('romance',3)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/depoisdouniverso.jpeg" alt="depois do universo">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/comoeueraantesdevoce.jpeg" alt="como eu era antes de voce">
-                <div class="overlay">Como Eu Era Antes de Você</div>  
+                <img id="img19" onclick="proxPag('romance',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/comoeueraantesdevoce.jpeg" alt="como eu era antes de voce">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/amoraprimeiravista.jpeg" alt="amor a primeira vista">
-                <div class="overlay">Amor à Primeira Vista</div>  
+                <img id="img20" onclick="proxPag('romance',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/amoraprimeiravista.jpeg" alt="amor a primeira vista">
+                <div class="overlay"></div>  
             </div>
-        <div class="imagem-seta"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
+        <div class="imagem-seta" onclick="upImg('romance', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
     </div>
 
     <h2 id="terror">Filmes de Terror:</h2>
     <div class="imagem-filme">
-        <div class="imagem-seta"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+        <div class="imagem-seta" onclick="upImg('terro', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
             <div class="imagem">
-                <img src="./src/img/filmes/oiluminado.jpeg" alt="o iluminado">
-                <div class="overlay">O Iluminado</div>  
+                <img id="img21" onclick="proxPag('terro',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/oiluminado.jpeg" alt="o iluminado">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem"> 
-                <img src="./src/img/filmes/oexorcista.jpeg" alt="o exorcista">
-                <div class="overlay">O Exorcista</div> 
+                <img id="img22" onclick="proxPag('terro',2)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/oexorcista.jpeg" alt="o exorcista">
+                <div class="overlay"></div> 
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/invocacaodomal.jpeg" alt="invocaçao do mal">
-                <div class="overlay">Invocação do Mal</div>  
+                <img id="img23" onclick="proxPag('terro',3)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/invocacaodomal.jpeg" alt="invocaçao do mal">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/hereditario.jpeg" alt="hereditario">
-                <div class="overlay">Hereditário</div>  
+                <img id="img24" onclick="proxPag('terro',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/hereditario.jpeg" alt="hereditario">
+                <div class="overlay"></div>  
             </div>
             <div class="imagem">
-                <img src="./src/img/filmes/aprofecia.jpeg" alt="a profecia">
-                <div class="overlay">A Profecia</div>  
+                <img id="img25" onclick="proxPag('terro',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/aprofecia.jpeg" alt="a profecia">
+                <div class="overlay"></div>  
             </div>
-        <div class="imagem-seta"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
+        <div class="imagem-seta" onclick="upImg('terro', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
     </div>
 
     <footer>
