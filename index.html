@@ -5,21 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style2.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="shortcut icon" href="./src/img/caveiraa.jpeg" type="image/x-icon">
     <title>PiratBR</title>
 
     <script src="./src/js/script.js" defer></script>
-    <!--<script src="./src/js/script_input.js" defer ></script>-->
+    <!--Feito por:
+        Vivian Raquel
+        Jainy Eduarda
+        Ana julia
+        grupo 8-->
 
 
 </head>
 <body>
 
+    <section id="quaseTudo" style="display: none; position: absolute;">
+
+    
+        <h1 id="h1" style="text-transform: uppercase;">Descrição</h1>
+        <div class="imagem-up">
+            <img class="dois" id= "src_img" src="./src/img/filmes/up2.jpg" alt="">
+            <p id="p_img_descri">Carl Fredricksen é um vendedor de balões que, aos 78 anos, está prestes a perder a casa em que sempre viveu com sua esposa, a falecida Ellie. Após um incidente, Carl é considerado uma ameaça pública e forçado a ser internado. Para evitar que isto aconteça, ele põe balões em sua casa, fazendo com que ela levante voo. Carl quer viajar para uma floresta na América do Sul, onde ele e Ellie sempre desejaram morar, mas descobre que um problema embarcou junto: Russell, um menino de 8 anos.</p>
+        </div>
+            
+        <h2> Outras Opções</h2>
+
+        <section class="section--">
+        <div class="imagem-barbie" id="mov1">
+            <img class= "um" id="tipo_img1" src="./src/img/filmes/barbie.jpeg" alt="foto1">
+            <div class="overlay"></div> 
+        </div>
+        
+        <div class="imagem-viva" id="mov2"> 
+            <img class="um" id="tipo_img2" src="./src/img/filmes/vivaavidaeumafesta.jpeg" alt="foto2">
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="imagem-toy" id="mov1">
+            <img class= "um" id="tipo_img3" src="./src/img/filmes/toystory.jpeg" alt="foto3">
+            <div class="overlay"></div> 
+        </div>
+        
+        <div class="imagem-luca" id="mov3">
+            <img class="um" id="tipo_img4" src="./src/img/filmes/luca1.jpeg" alt="foto4">
+            <div class="overlay"></div>
+            </div>
+            
+        </section>
+
+        <button style="padding: 10px;" type="button" onclick="dessaparecer()" > voltar a pagina inicial</button>
+    </section>
 
 
-    <header>
+
+    <header id="index" style="display: block;">
         <section class="cabecalho">
             <ul>
                 <div style="display: flex; padding: 10px; "> 
@@ -53,141 +95,141 @@
     </header>
 
 
-    
-    <h2 id="acao">Filmes de Ação:</h2>
-    <div class="imagem-filme">
-        <div class="imagem-seta" onclick="upImg('ação', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
-        
-        <div class="imagem"> 
-            <img id="img1" onclick="proxPag('ação',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/rocky.jpeg" alt="rocky">
-            <div class="overlay"></div> 
+    <main id="main" style="display: block;">
+        <h2 id="acao">Filmes de Ação:</h2>
+        <div class="imagem-filme">
+            <div class="imagem-seta" onclick="upImg('ação', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+            
+            <div class="imagem" onclick="proxPag('ação',1)"> 
+                <img id="img1"  src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/rocky.jpeg?v=1704373182566" alt="rocky">
+                <div class="overlay"></div> 
+            </div>
+                <div class="imagem" onclick="proxPag('ação',2)">
+                    <img id="img2"  src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/osmercenarios.jpeg?v=1704373177242" alt="os mercenarios">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('ação',3)">
+                    <img id="img3" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/missaoimpossivel.jpeg?v=1704373173860" alt="missao impossivel">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem"onclick="proxPag('ação',4)">
+                    <img id="img4"  src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/rambo.jpeg?v=1704373181053" alt="rambo">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('ação',5)">
+                    <img id="img5"  src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/cargaexplosiva.jpeg?v=1704373165977" alt="carga explosiva">
+                    <div class="overlay"></div>  
+                </div>
+            <div class="imagem-seta" onclick="upImg('ação', true,0)"> <img src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/setaparadireita.png" alt="seta para direita"></div>
         </div>
-            <div class="imagem">
-                <img id="img2" onclick="proxPag('ação',2)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/osmercenarios.jpeg" alt="os mercenarios">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img3" onclick="proxPag('ação',3)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/missaoimpossivel.jpeg" alt="missao impossivel">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img4" onclick="proxPag('ação',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/rambo.jpeg" alt="rambo">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img5" onclick="proxPag('ação',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/cargaexplosiva.jpeg" alt="carga explosiva">
-                <div class="overlay"></div>  
-            </div>
-        <div class="imagem-seta" onclick="upImg('ação', true,0)"> <img src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/setaparadireita.png" alt="seta para direita"></div>
-    </div>
 
-    <h2 id="comedia">Filmes de Comédia</h2>
-    <div class="imagem-filme">
-        <div class="imagem-seta" onclick="upImg('comedia', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
-            <div class="imagem">
-                <img id="img6" onclick="proxPag('comedia',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/todopoderoso.jpeg" alt="todo poderoso">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img7" onclick="proxPag('comedia',2)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/policialemapuros.jpeg" alt="policial em apuros">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img8" onclick="proxPag('comedia',3)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/pensecomoelestambem.jpeg" alt="pense como eles tambem">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img9" onclick="proxPag('comedia',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/gentegrande.jpeg" alt="gente grande">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img10" onclick="proxPag('comedia',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/esseemeugaroto.jpeg" alt="esse e o meu garoto">
-                <div class="overlay"></div>  
-            </div>
-        <div class="imagem-seta" onclick="upImg('comedia', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita" ></div>
-    </div>
+        <h2 id="comedia">Filmes de Comédia</h2>
+        <div class="imagem-filme">
+            <div class="imagem-seta" onclick="upImg('comedia', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+                <div class="imagem"onclick="proxPag('comedia',1)">
+                    <img id="img6"  src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/todopoderoso.jpeg?v=1704373184075" alt="todo poderoso">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('comedia',2)">
+                    <img id="img7" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/policialemapuros.jpeg?v=1704373180079" alt="policial em apuros">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('comedia',3)">
+                    <img id="img8" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/pensecomoelestambem.jpeg?v=1704373178541" alt="pense como eles tambem">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('comedia',4)">
+                    <img id="img9" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/gentegrande.jpeg?v=1704373169843" alt="gente grande">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('comedia',5)">
+                    <img id="img10" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/esseemeugaroto.jpeg?v=1704373168810" alt="esse e o meu garoto">
+                    <div class="overlay"></div>  
+                </div>
+            <div class="imagem-seta" onclick="upImg('comedia', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita" ></div>
+        </div>
 
-    <h2 id="infantil">Filmes Infantis:</h2>
-    <div class="imagem-filme">
-        <div class="imagem-seta" onclick="upImg('Infantis', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
-            <div class="imagem">
-                <img id="img11" onclick="proxPag('Infantis',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/vivaavidaeumafesta.jpeg" alt="viva a vida e uma festa">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem"> 
-                <a href="about.html" onclick="proxPag('Infantis',3)">
-                    <img id="img12" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/up.jpeg" alt="Up: Altas Aventuras">
+        <h2 id="infantil">Filmes Infantis:</h2>
+        <div class="imagem-filme">
+            <div class="imagem-seta" onclick="upImg('Infantis', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+                <div class="imagem" onclick="proxPag('Infantis',1)">
+                    <img id="img11" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/vivaavidaeumafesta.jpeg?v=1704373162225" alt="viva a vida e uma festa">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('Infantis',2)"> 
+                    <img id="img12" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/up2.jpg?v=1704373161130" alt="Up: Altas Aventuras">
                     <div class="overlay"></div>
-                </a>
-            </div>
-            <div class="imagem" onclick="proxPag('Infantis',3)">
-                <img id="img13" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/toystory.jpeg" alt="toy story">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img14" onclick="proxPag('Infantis',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/luca1.jpeg" alt="luca">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img15" onclick="proxPag('Infantis',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/barbie.jpeg" alt="barbie">
-                <div class="overlay"></div>  
-            </div>
-        <div class="imagem-seta" onclick="upImg('Infantis', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
-    </div>
+                </div>
+                <div class="imagem" onclick="proxPag('Infantis',3)">
+                    <img id="img13" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/toystory.jpeg?v=1704373185256" alt="toy story">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('Infantis',4)" >
+                    <img id="img14"src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/luca1.jpeg?v=1704373173276" alt="luca">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('Infantis',5)">
+                    <img id="img15" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/barbie.jpeg?v=1704373164873" alt="barbie">
+                    <div class="overlay"></div>  
+                </div>
+            <div class="imagem-seta" onclick="upImg('Infantis', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
+        </div>
 
-    <h2 id="romance">Filmes de Romance:</h2>
-    <div class="imagem-filme">
-        <div class="imagem-seta" onclick="upImg('romance', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
-            <div class="imagem">
-                <img id="img16" onclick="proxPag('romance',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/umalindamulher.jpeg" alt="uma linda mulher">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem"> 
-                <img id="img17" onclick="proxPag('romance',2)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/idasevindasdoamor.jpeg" alt="idas e vindas do amor">
-                <div class="overlay"></div> 
-            </div>
-            <div class="imagem">
-                <img id="img18" onclick="proxPag('romance',3)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/depoisdouniverso.jpeg" alt="depois do universo">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img19" onclick="proxPag('romance',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/comoeueraantesdevoce.jpeg" alt="como eu era antes de voce">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img20" onclick="proxPag('romance',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/amoraprimeiravista.jpeg" alt="amor a primeira vista">
-                <div class="overlay"></div>  
-            </div>
-        <div class="imagem-seta" onclick="upImg('romance', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
-    </div>
+        <h2 id="romance">Filmes de Romance:</h2>
+        <div class="imagem-filme">
+            <div class="imagem-seta" onclick="upImg('romance', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+                <div class="imagem" onclick="proxPag('romance',1)">
+                    <img id="img16" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/umalindamulher.jpeg?v=1704373158730" alt="uma linda mulher">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('romance',2)"> 
+                    <img id="img17" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/idasevindasdoamor.jpeg?v=1704373171643" alt="idas e vindas do amor">
+                    <div class="overlay"></div> 
+                </div>
+                <div class="imagem" onclick="proxPag('romance',3)">
+                    <img id="img18" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/depoisdouniverso.jpeg?v=1704373167864" alt="depois do universo">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('romance',4)">
+                    <img id="img19" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/comoeueraantesdevoce.jpeg?v=1704373166911" alt="como eu era antes de voce">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('romance',5)">
+                    <img id="img20" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/amoraprimeiravista.jpeg?v=1704373162961" alt="amor a primeira vista">
+                    <div class="overlay"></div>  
+                </div>
+            <div class="imagem-seta" onclick="upImg('romance', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
+        </div>
 
-    <h2 id="terror">Filmes de Terror:</h2>
-    <div class="imagem-filme">
-        <div class="imagem-seta" onclick="upImg('terro', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
-            <div class="imagem">
-                <img id="img21" onclick="proxPag('terro',1)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/oiluminado.jpeg" alt="o iluminado">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem"> 
-                <img id="img22" onclick="proxPag('terro',2)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/oexorcista.jpeg" alt="o exorcista">
-                <div class="overlay"></div> 
-            </div>
-            <div class="imagem">
-                <img id="img23" onclick="proxPag('terro',3)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/invocacaodomal.jpeg" alt="invocaçao do mal">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img24" onclick="proxPag('terro',4)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/hereditario.jpeg" alt="hereditario">
-                <div class="overlay"></div>  
-            </div>
-            <div class="imagem">
-                <img id="img25" onclick="proxPag('terro',5)" src="file:///C:/Users/vivia/Documents/piratBR-main/src/img/filmes/aprofecia.jpeg" alt="a profecia">
-                <div class="overlay"></div>  
-            </div>
-        <div class="imagem-seta" onclick="upImg('terro', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
-    </div>
+        <h2 id="terror">Filmes de Terror:</h2>
+        <div class="imagem-filme">
+            <div class="imagem-seta" onclick="upImg('terro', true,0)"> <img src="./src/img/setaparaesquerda.png" alt="seta para esquerda"></div>
+                <div class="imagem" onclick="proxPag('terro',1)">
+                    <img id="img21" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/oiluminado.jpeg?v=1704373176216" alt="o iluminado">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('terro',2)"> 
+                    <img id="img22" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/oexorcista.jpeg?v=1704373175133" alt="o exorcista">
+                    <div class="overlay"></div> 
+                </div>
+                <div class="imagem" onclick="proxPag('terro',3)">
+                    <img id="img23" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/invocacaodomal.jpeg?v=1704373172662" alt="invocaçao do mal">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('terro',4)">
+                    <img id="img24" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/hereditario.jpeg?v=1704373170684" alt="hereditario">
+                    <div class="overlay"></div>  
+                </div>
+                <div class="imagem" onclick="proxPag('terro',5)">
+                    <img id="img25" src="https://cdn.glitch.global/d8affcc3-ce7e-4926-9528-49930692b6ba/aprofecia.jpeg?v=1704373163967" alt="a profecia">
+                    <div class="overlay"></div>  
+                </div>
+            <div class="imagem-seta" onclick="upImg('terro', true,0)"> <img src="./src/img/setaparadireita.png" alt="seta para direita"></div>
+        </div>
 
-    <footer>
+    </main>
+
+    <footer style="display: block;" id="footer">
 
         <section class="gostou">
             <h2 id="gostou_h2">Gostou?</h2>
